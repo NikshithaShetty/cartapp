@@ -2,7 +2,7 @@ import axios from 'axios';
 export const getApidata = () => {
 
     return async (dispatch, getState) => {
-        const res = await axios.get('http://api.escuelajs.co/api/v1/products')
+        const res = await axios.get('https://api.escuelajs.co/api/v1/products')
         const product = await res.data;
         dispatch({
             type: "SET_PRODUCT",

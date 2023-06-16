@@ -9,7 +9,7 @@ const Home = () => {
     dispatch(getApidata() )
 },[])
   const getdata = useSelector((state) => state.cartreducer);
-
+console.log(getdata.product,"product");
   const dispatch = useDispatch();
   const onAdd = (e) => {
     dispatch(ADD(e));
